@@ -1,6 +1,6 @@
 # Use official golang image
 # `as builder` gives this container a name that can be referenced later
-FROM golang:1.9.0 as builder
+FROM golang:1.10.0 as builder
 
 # Set our workdir to current service
 WORKDIR /go/src/github.com/cabotmoose/shippy/consignment-service
