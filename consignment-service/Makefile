@@ -1,5 +1,5 @@
 build:
-	protoc -I. --go_out=plugins=micro:. proto/consignment/consignment.proto
+	protoc --proto_path=$(GOPATH)/src:. --micro_out=. --go_out=. proto/consignment/consignment.proto
 	docker build -t consignment-service .
 
 run:
