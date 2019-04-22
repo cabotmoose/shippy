@@ -11,7 +11,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-type repository interface {
+type Repository interface {
 	Create(*pb.Consignment) (*pb.Consignment, error)
 	GetAll() []*pb.Consignment
 }
