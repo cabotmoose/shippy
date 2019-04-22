@@ -16,7 +16,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
 FROM alpine:latest
 
 # Add security package
-RUN apk --no-cache add ca-certificate
+RUN apk --no-cache add ca-certificates
 
 # Create directory for app
 RUN mkdir /app
