@@ -93,7 +93,7 @@ func main() {
 		micro.Version("latest"),
 	)
 
-	vesselClient := vesselProto.NewVesselService("go.micro.srv.vessel", srv.Client())
+	vesselClient := vesselProto.NewVesselService("shippy.service.vessel", srv.Client())
 
 	// Init will parse the command line flags
 	srv.Init()
